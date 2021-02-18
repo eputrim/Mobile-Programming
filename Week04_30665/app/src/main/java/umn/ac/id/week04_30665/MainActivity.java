@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
         btnTutorial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentTutorial = new Intent(v.getContext(), TutorialActivity.class);
-                v.getContext().startActivity(intentTutorial);
+                Intent intentTutorial = new Intent(MainActivity.this, TutorialActivity.class);
+                startActivity(intentTutorial);
             }
         });
     }

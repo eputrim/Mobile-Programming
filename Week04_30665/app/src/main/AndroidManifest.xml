@@ -9,9 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Week04_30665">
-        <activity android:name=".TutorialActivity"></activity>
-        <activity android:name=".ThirdActivity" />
-        <activity android:name=".SecondActivity" />
+        <activity
+            android:name=".TutorialActivity"
+            android:label="Activity Tutorial"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="umn.ac.id.week04_30665.MainActivity" />
+        </activity>
+        <activity android:name=".ThirdActivity"
+            android:label="Activity Third"
+            android:parentActivityName=".TutorialActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="umn.ac.id.week04_30665.TutorialActivity" />
+        </activity>
+        <activity android:name=".SecondActivity"
+            android:label="Activity Second"
+            android:parentActivityName=".TutorialActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="umn.ac.id.week04_30665.TutorialActivity" />
+        </activity>
         <activity
             android:name=".ActivityDua"
             android:label="Activity Kedua"
